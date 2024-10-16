@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Store</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Solar Store</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Offcanvas for Mobile View -->
+      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Solar Store</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="solarCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#solarCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#solarCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#solarCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./resources/solar1.jpg" class="d-block w-100" alt="Solar Panels">
+        <div class="carousel-caption">
+          <h5>High-Quality Solar Panels</h5>
+          <p>Harness the power of the sun with our premium solar panels.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./resources/solar6.jpg" class="d-block w-100" alt="Solar Batteries">
+        <div class="carousel-caption">
+          <h5>Reliable Solar Batteries</h5>
+          <p>Store energy efficiently with our long-lasting solar batteries.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./resources/solar2.jpg" class="d-block w-100" alt="Solar Inverters">
+        <div class="carousel-caption">
+          <h5>Advanced Solar Inverters</h5>
+          <p>Convert solar energy to power your home or business.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#solarCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#solarCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+ <!-- Main Content -->
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 order-1">
+            <h1 class="main-title">Solar Energy</h1><br>
+            <h2 class="small-title">Today's resource for a brighter future</h2><br>
+            <p style="font-weight: bold;">Solar Site Systems are a nationwide provider of Solar PV, with a combined 30 years worth of experience providing products and services to the construction industry and hold all the necessary accreditations to work on construction sites.</p><br>
+            <p>Solar Site Systems is MCS certified, which is an industry-led quality assurance scheme aimed at the renewable energy market. We have preferred supplier agreements with many tier 1 manufacturers, which ensures we offer competitive pricing and a tailored approach to site-specific requirements.</p><br>
+            <p>Due to the recent Part L building regulation changes, we’ve been working with a number of national house builders to streamline their processes. We have an excellent reputation for being client-focused, which includes quick mobilisation, adaptable and scalable.</p>
+        </div>
+        <div class="col-md-6 order-md-1 order-2">
+            <img src="./resources/solar6.jpg" alt="Solar Solutions" class="image-container img-fluid">
+        </div>
+        <div class="col-12 order-3">
+            <div class="container d-flex justify-content-center align-items-center">
+                <a href="#" class="btn btn-primary contact-btn overlay-button text-center">Contact Us</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Gallery Container -->
+<div class="container gallery-container">
+    <div class="row">
+        <div class="col-md-3 col-12">
+            <div class="gallery-item">
+                <img src="./resources/solar3.jpg" alt="Image 1">
+                <div class="overlay">
+                    <i class="fas fa-solar-panel icon"></i>
+                    <p class="text-center">Image 1 Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-12">
+            <div class="gallery-item">
+                <img src="./resources/solar4.jpg" alt="Image 2">
+                <div class="overlay">
+                    <i class="fas fa-battery-full icon"></i>
+                    <p class="text-center">Image 2 Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-12">
+            <div class="gallery-item">
+                <img src="./resources/solar5.jpg" alt="Image 3">
+                <div class="overlay">
+                    <i class="fas fa-plug icon"></i>
+                    <p class="text-center">Image 3 Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-12">
+            <div class="gallery-item">
+                <img src="./resources/solar1.jpg" alt="Image 4">
+                <div class="overlay">
+                    <i class="fas fa-solar-panel icon"></i>
+                    <p class="text-center">Image 4 Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+
+
+ <!-- Main Content -->
+ <div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 order-1">
+            <h1 class="main-title">Solar Energy</h1><br>
+            <h2 class="small-title">Today's resource for a brighter future</h2><br>
+            <p style="font-weight: bold;">Solar Site Systems are a nationwide provider of Solar PV, with a combined 30 years worth of experience providing products and services to the construction industry and hold all the necessary accreditations to work on construction sites.</p><br>
+            <p>Solar Site Systems is MCS certified, which is an industry-led quality assurance scheme aimed at the renewable energy market. We have preferred supplier agreements with many tier 1 manufacturers, which ensures we offer competitive pricing and a tailored approach to site-specific requirements.</p><br>
+            <p>Due to the recent Part L building regulation changes, we’ve been working with a number of national house builders to streamline their processes. We have an excellent reputation for being client-focused, which includes quick mobilisation, adaptable and scalable.</p>
+        </div>
+        <div class="col-md-6 order-md-1 order-2">
+            <img src="./resources/solar5.jpg" alt="Solar Solutions" class="image-container img-fluid">
+        </div>
+        <div class="col-12 order-3">
+            <div class="container d-flex justify-content-center align-items-center">
+                <a href="#" class="btn btn-primary contact-btn overlay-button text-center">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+
+
+
+
+<!-- Full-Width Image Container -->
+<div class="image-container">
+    <img src="./resources/solar7.jpg" alt="Solar Energy" class="image">
+    <div class="overlay">
+        <h1 class="overlay-title">Welcome to Solar Energy</h1>
+        <p class="overlay-text">Explore our innovative solutions for a sustainable future.</p>
+        <a href="#" class="btn btn-primary overlay-button">Learn More</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container benefits-section">
+    <div class="row">
+        <!-- Benefits Description (Static on the left) -->
+        <div class="col-md-6 benefits-description">
+            <h2>Benefits</h2>
+            <p>Roof integrated solar replaces the tiles or slates on the roof so the panels sit lower down in the roofline to look more like an intended part of the house and less like a bolt-on afterthought than above-roof rack-mounted systems.</p><br>
+            <p>The aesthetic benefits of roof integration are clear, but there are other benefits from going in-roof.</p>
+        </div>
+
+        <!-- Scrollable Benefits Container (Right) -->
+        <div class="col-md-6 benefits-list-container">
+            <div class="row benefits-list">
+                <div class="col-md-6 col-12 benefit-item">
+                    <i class="fas fa-dollar-sign benefit-icon"></i> <!-- Icon -->
+                    <h4>
+                        Fast Turnaround</h4>
+                    <p>With roof integrated solar, there are no tiles behind the panels, so all roofing repairs can be carried out while leaving the solar system in place.</p>
+                </div>
+                <div class="col-md-6 col-12 benefit-item">
+                    <i class="fas fa-leaf benefit-icon"></i> <!-- Icon -->
+                    <h4>
+                        Installation</h4>
+                    <p>Roof integrated solar panels can be installed easily in a new roof. Solar specialists can fix the panels and flashings before the roofing contractors fix the roof covering around them.</p>
+                </div>
+                <div class="col-md-6 col-12 benefit-item">
+                    <i class="fas fa-tools benefit-icon"></i> <!-- Icon -->
+                    <h4>Bird Infestation</h4>
+                    <p>nests below the panels will reduce the free passage of cooling air behind solar PV panels increasing operating temperature and reducing energy yield.</p>
+                </div>
+                <div class="col-md-6 col-12 benefit-item">
+                    <i class="fas fa-sun benefit-icon"></i> <!-- Icon -->
+                    <h4>Increase safety</h4>
+                    <p>Roof-integrated solar outperform on-roof systems when it comes to wind resistance. Integrated solar is fixed to rafters and battens meaning there is no space for wind to get underneath.</p>
+                </div>
+                <!-- Add more benefits as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to Show More Benefits -->
+    <div class="col-12 text-center">
+        <button class="btn btn-primary overlay-button">Show More Benefits</button>
+    </div>
+</div>
+
+
+
+
+
+<div class="container my-5">
+    <div class="row solar-panel-container">
+        <!-- Solar Panel 1 -->
+        <div class="col-md-3 col-sm-6 mb-4 solar-panel-item">
+            <div class="panel-card">
+                <img src="./resources/solar8.jpg" alt="Solar Panel 1" class="panel-img img-fluid">
+                <h4>Solar Panel 1</h4>
+                <p>Price: $1000</p>
+                <a href="#" class="btn btn-primary contact-btn overlay-button mt-2">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Solar Panel 2 -->
+        <div class="col-md-3 col-sm-6 mb-4 solar-panel-item">
+            <div class="panel-card">
+                <img src="./resources/solar9.jpg" alt="Solar Panel 2" class="panel-img img-fluid">
+                <h4>Solar Panel 2</h4>
+                <p>Price: $1200</p>
+                <a href="#" class="btn btn-primary contact-btn overlay-button mt-2">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Solar Panel 3 -->
+        <div class="col-md-3 col-sm-6 mb-4 solar-panel-item">
+            <div class="panel-card">
+                <img src="./resources/solar10.jpg" alt="Solar Panel 3" class="panel-img img-fluid">
+                <h4>Solar Panel 3</h4>
+                <p>Price: $900</p>
+                <a href="#" class="btn btn-primary contact-btn overlay-button mt-2">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Solar Panel 4 -->
+        <div class="col-md-3 col-sm-6 mb-4 solar-panel-item">
+            <div class="panel-card">
+                <img src="./resources/solar11.jpg" alt="Solar Panel 4" class="panel-img img-fluid">
+                <h4>Solar Panel 4</h4>
+                <p>Price: $1500</p>
+                <a href="#" class="btn btn-primary contact-btn overlay-button mt-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="oval-container">
+    <div class="oval-top"></div> <!-- Oval Shape -->
+    <div class="content">
+        <h1>Welcome to Our Solar Energy Solutions</h1>
+        <p>Discover the benefits of harnessing the power of the sun.</p>
+        <button class="btn btn-light overlay-button">Get Started</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

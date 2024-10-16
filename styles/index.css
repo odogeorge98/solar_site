@@ -1,0 +1,385 @@
+ /* Custom CSS to center the carousel captions */
+ .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  /* Responsive text sizes for carousel captions */
+  .carousel-caption h5 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  /* Desktop-specific adjustments for carousel images */
+@media (min-width: 768px) {
+.carousel-item img {
+  width: 100%; /* Ensure image spans the entire width */
+  height: 700px; /* Set a height suitable for desktop */
+  object-fit: cover; /* Ensures the image covers the carousel area without distortion */
+}
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+.carousel-item img {
+  height: auto; /* Let the image adjust naturally on smaller screens */
+  object-fit: contain; /* Maintain image aspect ratio for smaller screens */
+}
+}
+
+
+
+
+ /* Custom CSS for layout */
+ .container {
+    margin-top: 50px; /* Space from the top */
+  }
+  .main-title {
+    font-size: 3rem; /* Large title size */
+  }
+  .small-title {
+    font-size: 1.5rem; /* Smaller title size */
+    color: #6c757d; /* Bootstrap's secondary color */
+  }
+  .contact-btn {
+    margin-top: 20px; /* Space above the button */
+  }
+  .image-container {
+    max-width: 100%; /* Ensure the image does not exceed the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+
+
+
+ /* Custom CSS */
+.gallery-container {
+    margin-top: 50px; /* Space from the top */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    height: 400px; /* Increase the height for all images */
+    margin-bottom: 0; /* Remove bottom margin to bring images closer */
+}
+
+.gallery-item img {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Make image fill the height */
+    object-fit: cover; /* Cover the area without stretching */
+    transition: transform 0.3s ease; /* Smooth image transition */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+.overlay p {
+    margin: 5px 0 0; /* Space below the icon */
+}
+
+/* Icon styles */
+.icon {
+    font-size: 2rem; /* Adjust icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+    color: #f55f5f; /* Icon color (gold) */
+}
+
+/* Scale effect on hover */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slightly scale image on hover */
+}
+
+@media (max-width: 576px) {
+    .gallery-item {
+        margin-bottom: 10px; /* Adjust space between items for mobile */
+    }
+}
+
+
+
+
+
+/* Full-Width Image Container Styles */
+.image-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 400px; /* Set height for the image */
+    overflow: hidden; /* Hide overflow */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.image {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Cover the area without stretching */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for the overlay */
+}
+
+.overlay-title {
+    font-size: 2rem; /* Size for the title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.overlay-text {
+    font-size: 1rem; /* Size for the text */
+    margin-bottom: 20px; /* Space below text */
+}
+
+.overlay-button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Button font size */
+    color: #F07676; /* Button text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #F07676; /* Border color and thickness */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.overlay-button:hover {
+    background-color: #F07676; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+
+
+
+
+
+
+/* Benefits Section Styling */
+.benefits-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Benefits Description on top */
+.benefits-description {
+    width: 100%; /* Full width for both desktop and mobile */
+    margin-bottom: 20px; /* Space between description and benefits */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.benefits-list-container {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Let content dictate height on mobile */
+    overflow-y: auto; /* Independent scrolling on desktop */
+    padding: 15px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+}
+
+.benefits-list-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+/* Benefits List */
+.benefits-list {
+    padding: 0;
+}
+
+.benefit-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+.benefit-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Icon styling */
+.benefit-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #FFD700;
+    display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .benefits-section {
+        flex-direction: column; /* Stack description and benefits */
+    }
+
+    .benefits-description, 
+    .benefits-list-container {
+        height: auto; /* Auto height for mobile */
+        padding: 10px;
+    }
+
+    .benefit-item {
+        margin-bottom: 10px; /* Reduce margin for mobile */
+    }
+}
+
+
+
+
+
+.oval-container {
+    width: 100%;
+    background: linear-gradient(135deg, #f55f5f, #f07676); /* Gradient background */
+    padding: 50px 0; /* Space above and below the button */
+    position: relative;
+    overflow: hidden; /* Hide overflow for the oval shape */
+}
+
+.oval-top {
+    position: absolute;
+    top: -50px; /* Adjust to position the oval */
+    left: 50%;
+    width: 200%; /* Wider than the container */
+    height: 100px; /* Height of the oval */
+    background: inherit; /* Use the same gradient as the container */
+    border-radius: 50%; /* Make it oval */
+    transform: translateX(-50%); /* Center the oval */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Make sure content is above the oval */
+    text-align: center;
+    color: white; /* Text color */
+}
+
+.btn {
+    margin-top: 20px; /* Space above the button */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for solar panels */
+.solar-panel-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Individual panel card styling */
+.panel-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure all cards are the same height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Panel image styling */
+.panel-img {
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    width: 100%; /* Ensure image takes full width */
+}
+
+/* Title and price styling */
+.panel-card h4 {
+    margin-bottom: 10px;
+}
+
+.panel-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Hover effect for panel card */
+.panel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation active class */
+.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive grid for desktop and mobile */
+@media (max-width: 768px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+.contact-btn {
+    padding: 10px 20px; /* Add some padding */
+    font-size: 1.2rem; /* Increase font size */
+}
+
