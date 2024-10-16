@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Solar Store</a>
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -73,22 +73,39 @@
       <div class="carousel-item active">
         <img src="./resources/solar1.jpg" class="d-block w-100" alt="Solar Panels">
         <div class="carousel-caption">
-          <h5>High-Quality Solar Panels</h5>
-          <p>Harness the power of the sun with our premium solar panels.</p>
+          <h2 style="font-weight: bolder; color: #f55f5f;">High-Quality Solar Panels</h2>
+          <p style="font-weight: bold;">Harness the power of the sun with our premium solar panels.</p>
+          <div class="button-container">
+            <a href="#" class="btn create-btn">
+                Explore <span class="arrow">→</span>
+            </a>
         </div>
+        
+        </div>
+        
       </div>
       <div class="carousel-item">
         <img src="./resources/solar6.jpg" class="d-block w-100" alt="Solar Batteries">
         <div class="carousel-caption">
-          <h5>Reliable Solar Batteries</h5>
-          <p>Store energy efficiently with our long-lasting solar batteries.</p>
+          <h2 style="font-weight: bolder; color: #f55f5f;">Reliable Solar Batteries</h5>
+          <p style="font-weight: bold;">Store energy efficiently with our long-lasting solar batteries.</p>
+          <div class="button-container">
+            <a href="#" class="btn create-btn">
+                Explore<span class="arrow">→</span>
+            </a>
+        </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./resources/solar2.jpg" class="d-block w-100" alt="Solar Inverters">
         <div class="carousel-caption">
-          <h5>Advanced Solar Inverters</h5>
-          <p>Convert solar energy to power your home or business.</p>
+          <h2 style="font-weight: bolder; color: #f55f5f;">Advanced Solar Inverters</h2>
+          <p style="font-weight: bold;">Convert solar energy to power your home or business.</p>
+          <div class="button-container">
+            <a href="#" class="btn create-btn">
+                Explore <span class="arrow">→</span>
+            </a>
+        </div>
         </div>
       </div>
     </div>
@@ -102,6 +119,11 @@
     </button>
   </div>
 
+
+
+
+
+  
 
 
  <!-- Main Content -->
@@ -134,19 +156,21 @@
     <div class="row">
         <div class="col-md-3 col-12">
             <div class="gallery-item">
-                <img src="./resources/solar3.jpg" alt="Image 1">
+                <img src="./resources/solar4.jpg" alt="Image 1">
                 <div class="overlay">
                     <i class="fas fa-solar-panel icon"></i>
-                    <p class="text-center">Image 1 Description</p>
+                    <h2 class="text-center">Root Integrated Solar</h2>
+                    <p>Better looking, for sure, but what are the other advantages of roof integrated solars?</p>
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-12">
             <div class="gallery-item">
-                <img src="./resources/solar4.jpg" alt="Image 2">
+                <img src="./resources/solar3.jpg" alt="Image 2">
                 <div class="overlay">
                     <i class="fas fa-battery-full icon"></i>
-                    <p class="text-center">Image 2 Description</p>
+                    <h2 class="text-center">Root Integrated Solar</h2>
+                    <p>Better looking, for sure, but what are the other advantages of roof integrated solars?</p>
                 </div>
             </div>
         </div>
@@ -155,7 +179,8 @@
                 <img src="./resources/solar5.jpg" alt="Image 3">
                 <div class="overlay">
                     <i class="fas fa-plug icon"></i>
-                    <p class="text-center">Image 3 Description</p>
+                    <h2 class="text-center">Root Integrated Solar</h2>
+                    <p>Better looking, for sure, but what are the other advantages of roof integrated solars?</p>
                 </div>
             </div>
         </div>
@@ -164,7 +189,8 @@
                 <img src="./resources/solar1.jpg" alt="Image 4">
                 <div class="overlay">
                     <i class="fas fa-solar-panel icon"></i>
-                    <p class="text-center">Image 4 Description</p>
+                    <h2 class="text-center">Root Integrated Solar</h2>
+                    <p>Better looking, for sure, but what are the other advantages of roof integrated solars?</p>
                 </div>
             </div>
         </div>
@@ -312,17 +338,48 @@
 
 
 
-<div class="oval-container">
-    <div class="oval-top"></div> <!-- Oval Shape -->
-    <div class="content">
-        <h1>Welcome to Our Solar Energy Solutions</h1>
-        <p>Discover the benefits of harnessing the power of the sun.</p>
-        <button class="btn btn-light overlay-button">Get Started</button>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 footer-about">
+                <h5>About Us</h5>
+                <p>We are a leading provider of solar energy solutions, committed to a greener, sustainable future. Join us in creating a brighter tomorrow.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4 footer-links">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-4 footer-contact">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>Email: info@solarsite.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: 123 Solar St, Green City</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-
-
+    <div class="footer-bottom">
+        <p>&copy; 2024 Solar Site Systems. All Rights Reserved.</p>
+    </div>
+</footer>
 
 
 
